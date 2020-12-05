@@ -53,5 +53,6 @@ for passport in file2:
     if all(valid):
         count+=1
 
+print(count1)
 print(count)
 
