@@ -1,3 +1,3 @@
 # AdventOfCode
 
-Here are my solution for Avent of Code 2020
+Here are my solutions for Advent of Code 2020!
