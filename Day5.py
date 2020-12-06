@@ -15,7 +15,7 @@ def findbst(n, foo):
 
 
 def main():
-    seatcoord = set()
+    seatcoord = []
     with open("seat.txt", 'r') as f:
         mylist = f.readlines()
     seatlist = mylist
@@ -25,15 +25,10 @@ def main():
 
         rown = findbst(127, row)
         coln = findbst(7, col)
+        seatcoord.append(rown*8 + coln)
 
-        cord = (rown, coln)
-        seatcoord.add(cord)
-        res = rown*8 + coln
+    print(seatcoord)
 
-    missingSeats = []
-    for y in range(127):
-        for x in range(7):
-            if (y,x) not in seatcoord:
-                missingSeats.append((y, x))
-    print(missingSeats)
+
+
 main()
