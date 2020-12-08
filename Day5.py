@@ -16,7 +16,7 @@ def findbst(n, foo):
 
 def main():
     seatcoord = []
-    with open("seat.txt", 'r') as f:
+    with open("test.txt", 'r') as f:
         mylist = f.readlines()
     seatlist = mylist
     for x in seatlist:

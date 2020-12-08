@@ -15,6 +15,7 @@ def sol1(d):
 
     return counter
 
+
 def sol2(d):
     counter = 0
     bags = [i for i in d["shiny gold"]]
@@ -30,11 +31,12 @@ def sol2(d):
 
 
 def main():
-    with open("seat.txt", "r") as file:
+    with open("test.txt", "r") as file:
         lines = file.readlines()
         di = {i.split(" bags contain ")[0]: i.split(" bags contain ")[1].split(",") for i in lines}
 
     print("P1 =", sol1(di))
     print("P2 =", sol2(di))
+
 
 main()
